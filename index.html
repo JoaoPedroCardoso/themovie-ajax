@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tabela Dinâmica</title>
+	<title>Top 10 filmes mais populares</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="functions.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<h1>Top 10 filmes mais populares by The Movie</h1>
+<body id="body">
 	<table id="tabela">
 		<thead>
-			<tr>
+			<tr class="header">
         <th>Capa</th>
-				<th>Titulo</th>
-        <th>Data lancamento</th>
+				<th>Título</th>
+        <th>Data lançamento</th>
         <th>Nota</th>
-        <th>Avaliacoes</th>
-				<th>Descricao</th>
+        <th>Avaliações</th>
+				<th>Descrição</th>
 			</tr>
 		</thead>
 		<tbody id="tbody">

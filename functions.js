@@ -17,6 +17,7 @@ const getMostPopularFilms = () =>  {
       const image = "https://image.tmdb.org/t/p/w500" + filme.poster_path;
       var posterImg = document.createElement("img");
       posterImg.setAttribute("src", image);
+      poster.setAttribute("class", "poster");
       posterImg.setAttribute("class", "poster");
       poster.appendChild(posterImg);
 
@@ -33,6 +34,7 @@ const getMostPopularFilms = () =>  {
       votes.setAttribute("class", getRattingClass(filme.vote_average));
 
       avaliacoes.innerText = filme.vote_count;
+      avaliacoes.setAttribute("class", "avaliacoes");
 
     });
   })
